@@ -1,0 +1,45 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto 350px auto;
+    grid-gap: 10px;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+}
+header{
+    grid-column: span 12;
+    display: flex;
+    background: red;
+}
+header div{
+    padding: 10px 20px;
+}
+header div:nth-child(3){
+    margin-left: auto;
+}
+nav{
+    grid-column: span 2;
+    background: rgb(181, 240, 104);
+    
+}
+main, nav, aside, footer{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+main{
+    grid-column: span 8;
+    background: rgb(76, 209, 250);
+}
+aside{
+    grid-column:  span 2;
+    background: chartreuse;
+}
+footer{
+    grid-column: span 12;
+    background: pink;
+    display: flex;
+    align-items: center;
+}
